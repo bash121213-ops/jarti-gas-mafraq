@@ -1,0 +1,36 @@
+# Secrets and local environment — never commit real keys
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+android/key.properties
+app/android/key.properties
+
+# Flutter / Dart
+.dart_tool/
+.packages
+app/build/
+build/
+app/.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android
+app/android/local.properties
+app/android/.gradle/
+app/android/app/debug/
+app/android/app/profile/
+app/android/app/release/
+
+# iOS
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/flutter_export_environment.sh
+
+# IDEs and OS files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+*.log
