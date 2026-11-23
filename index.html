@@ -3,632 +3,453 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>جَرّتي — غاز المفرق | نماذج الواجهات</title>
+<meta name="theme-color" content="#FCFAF7" />
+<title>جَرّتي — توصيل أسطوانات الغاز في المفرق | 7.10 د.أ</title>
+<meta name="description" content="جَرّتي: تطبيق توصيل وتبديل أسطوانات الغاز في المفرق. أسطوانة حديد أو بلاستيك بـ 7.00 د.أ + 0.10 د.أ توصيل. الدفع نقداً عند التسليم، وتتبّع الطلب حتى باب البيت." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="landing.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 26'%3E%3Cpath d='M12 1.6c3.4 3.9 7.2 7.2 7.2 12.1a7.2 7.2 0 1 1-14.4 0C4.8 8.8 8.6 5.5 12 1.6Z' fill='%23EE9B4C'/%3E%3C/svg%3E">
 </head>
 <body>
 
-<header class="page-head">
-  <div class="brand">
-    <div class="brand-mark">
-      <svg width="26" height="29" viewBox="0 0 24 26" fill="none">
-        <path d="M12 1.6c3.4 3.9 7.2 7.2 7.2 12.1a7.2 7.2 0 1 1-14.4 0C4.8 8.8 8.6 5.5 12 1.6Z" fill="#5B3512"/>
-        <path d="M12 12.4c1.6 1.9 3.1 3.3 3.1 5.2a3.1 3.1 0 1 1-6.2 0c0-1.9 1.5-3.3 3.1-5.2Z" fill="#FFF6E8"/>
-      </svg>
-    </div>
-    <div>
-      <h1>جَرّتي — تبديل أسطوانات الغاز في المفرق</h1>
-      <p>واجهات هادئة ومرتّبة بالعربية الكاملة من اليمين إلى اليسار: ألوان دافئة، مساحات مريحة، وخط كبير واضح يناسب جميع الأعمار.</p>
-    </div>
-  </div>
-  <div class="meta">
-    <span class="chip">الخط: Cairo</span>
-    <span class="chip"><span class="sw" style="background:#EE9B4C"></span>مشمشي دافئ</span>
-    <span class="chip"><span class="sw" style="background:#33475F"></span>كحلي هادئ</span>
-    <span class="chip">العملة: د.أ</span>
-    <span class="chip">RTL كامل</span>
+<!-- ============ HEADER ============ -->
+<header class="lp-header">
+  <div class="wrap lp-header-in">
+    <a class="lp-brand" href="index.html" aria-label="جَرّتي — الصفحة الرئيسية">
+      <span class="lp-mark" aria-hidden="true">
+        <svg width="24" height="27" viewBox="0 0 24 26" fill="none">
+          <path d="M12 1.6c3.4 3.9 7.2 7.2 7.2 12.1a7.2 7.2 0 1 1-14.4 0C4.8 8.8 8.6 5.5 12 1.6Z" fill="#5B3512"/>
+          <path d="M12 12.4c1.6 1.9 3.1 3.3 3.1 5.2a3.1 3.1 0 1 1-6.2 0c0-1.9 1.5-3.3 3.1-5.2Z" fill="#FFF6E8"/>
+        </svg>
+      </span>
+      <span class="lp-brand-tx">
+        <b>جَرّتي</b>
+        <small>غاز المفرّق إلى بابك</small>
+      </span>
+    </a>
+
+    <nav class="lp-nav" aria-label="التنقل الرئيسي">
+      <a href="#how">كيف يعمل</a>
+      <a href="#pricing">الأسعار</a>
+      <a href="#areas">المناطق</a>
+      <a href="#faq">الأسئلة</a>
+      <a class="lp-nav-btn" href="screens.html">شاشات التطبيق</a>
+    </nav>
   </div>
 </header>
 
-<section class="hero-band">
-  <figure class="hp">
-    <img src="img/delivery.webp" alt="موزّع غاز يحمل أسطوانة إلى باب المنزل" />
-    <figcaption>توصيل الأسطوانة حتى باب البيت<small>موزّع معتمد · الدفع نقداً عند التسليم</small></figcaption>
-  </figure>
-  <figure class="hp">
-    <img src="img/warehouse.webp" alt="ديانا غاز في المفرق" />
-    <figcaption>ديانات معتمدة في المفرق<small>أسطوانات حديد وبلاستيك مفحوصة</small></figcaption>
-  </figure>
-  <figure class="hp">
-    <img src="img/mafraq.webp" alt="حي سكني في المفرق" />
-    <figcaption>أحياء المفرق وقرى المحافظة<small>الفدين، الجديدة، بلعما، المنشية</small></figcaption>
-  </figure>
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="lp-hero">
+  <div class="wrap lp-hero-grid">
+
+    <div class="lp-hero-copy">
+      <span class="lp-eyebrow">
+        <span class="lp-dot"></span>
+        المفرق · الفدين · الجديدة · بلعما · المنشية
+      </span>
+
+      <h1>أسطوانة الغاز<br><span class="hl">توصلك للباب</span><br>بسعر واضح.</h1>
+
+      <p class="lp-lead">
+        جَرّتي تطبيق تبديل أسطوانات الغاز في مدينة المفرق: اختر حديد أو بلاستيك،
+        حدّد الكمية والعنوان، وموزّع معتمد يوصلك خلال دقائق. الدفع نقداً عند التسليم
+        بعملات معدنية صغيرة.
+      </p>
+
+      <div class="lp-hero-actions">
+        <a class="lp-btn lp-btn-primary" href="#download">
+          اطلب أسطوانتك الآن
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg>
+        </a>
+        <a class="lp-btn lp-btn-ghost" href="screens.html">استعرض الشاشات</a>
+      </div>
+
+      <ul class="lp-trust">
+        <li>
+          <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg></span>
+          أسطوانات مفحوصة ومعتمدة
+        </li>
+        <li>
+          <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg></span>
+          دفع نقدي عند التسليم
+        </li>
+        <li>
+          <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg></span>
+          تتبّع الطلب لحظة بلحظة
+        </li>
+      </ul>
+    </div>
+
+    <div class="lp-hero-art">
+      <div class="lp-photo">
+        <img src="img/delivery.webp" alt="موزّع غاز يحمل أسطوانة إلى باب المنزل في المفرق" />
+      </div>
+
+      <div class="lp-float lp-float-price">
+        <span class="lbl">سعر الأسطوانة</span>
+        <strong>7.00 <i>د.أ</i></strong>
+        <span class="sub">+ 0.10 د.أ توصيل</span>
+        <div class="sep"></div>
+        <span class="lbl">المجموع</span>
+        <b class="total">7.10 <i>د.أ</i></b>
+      </div>
+
+      <div class="lp-float lp-float-eta">
+        <span class="pulse"></span>
+        <div>
+          <b>يصل بعد ١٥ دقيقة</b>
+          <small>حي الفدين — المفرق</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<main class="screens">
-
-  <!-- ======================= SCREEN 1 ======================= -->
-  <section class="screen">
-    <div class="cap">
-      <b>١</b>
-      <div>
-        <h2>البداية وتسجيل الدخول <small>Onboarding</small></h2>
-        <p>رقم أردني ورمز تحقق، مع اختيار نوع الحساب</p>
-      </div>
+<!-- ============ PRICING ============ -->
+<section class="lp-section" id="pricing">
+  <div class="wrap">
+    <div class="lp-sec-head">
+      <span class="lp-tag">تسعير ثابت وشفاف</span>
+      <h2>سعر واحد لكل بيت في المفرق</h2>
+      <p>حديد أو بلاستيك — نفس السعر. أجرة التوصيل ١٠ قروش فقط لكل طلب، وتُدفع مرة واحدة مهما كان عدد الأسطوانات.</p>
     </div>
 
-    <div class="device">
-      <div class="phone">
-        <div class="island"></div>
-        <div class="statusbar">
-          <span>٩:٤١</span>
-          <div class="sig">
-            <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="1"/><rect x="4.6" y="5" width="3" height="6" rx="1"/><rect x="9.2" y="2.6" width="3" height="8.4" rx="1"/><rect x="13.8" y="0" width="3" height="11" rx="1"/></svg>
-            <svg width="15" height="11" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 4.2A11 11 0 0 1 15 4.2"/><path d="M3.6 6.8a7.2 7.2 0 0 1 8.8 0"/><circle cx="8" cy="10" r="1.1" fill="currentColor" stroke="none"/></svg>
-            <svg width="24" height="11" viewBox="0 0 24 12" fill="none"><rect x="0.6" y="0.6" width="20" height="10.8" rx="3" stroke="currentColor" stroke-opacity=".45"/><rect x="2.4" y="2.4" width="16" height="7.2" rx="1.8" fill="currentColor"/><path d="M22.4 4.2v3.6c1-.4 1.4-1 1.4-1.8s-.4-1.4-1.4-1.8Z" fill="currentColor" fill-opacity=".45"/></svg>
-          </div>
-        </div>
-
-        <div class="scr-auth">
-          <div class="auth-brand">
-            <div class="logo-tile">
-              <svg width="27" height="30" viewBox="0 0 24 26" fill="none">
-                <path d="M12 1.6c3.4 3.9 7.2 7.2 7.2 12.1a7.2 7.2 0 1 1-14.4 0C4.8 8.8 8.6 5.5 12 1.6Z" fill="#5B3512"/>
-                <path d="M12 12.4c1.6 1.9 3.1 3.3 3.1 5.2a3.1 3.1 0 1 1-6.2 0c0-1.9 1.5-3.3 3.1-5.2Z" fill="#FFF6E8"/>
-              </svg>
-            </div>
-            <h1>جَرّتي</h1>
-            <p>غاز المفرّق يوصلك للباب — بأمان وسرعة</p>
-          </div>
-
-          <div class="auth-card">
-            <h2>تسجيل الدخول</h2>
-            <p class="hint">أدخل رقم هاتفك الأردني لتصلك رسالة تحقق</p>
-
-            <div class="seg">
-              <div class="seg-opt on">مواطن / عميل</div>
-              <div class="seg-opt">موزّع معتمد</div>
-            </div>
-            <p class="seg-note">اطلب أسطوانات الغاز لبيتك أو محلك</p>
-
-            <label class="lab">رقم الهاتف</label>
-            <div class="input">
-              <span class="flag">🇯🇴</span>
-              <span class="cc">+962</span>
-              <span class="num">79 123 4567</span>
-              <span class="ok">
-                <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6.4 4.6 9 10 3.2"/></svg>
-              </span>
-            </div>
-
-            <label class="lab">رمز التحقق</label>
-            <div class="otp-row">
-              <div class="otp filled">5</div>
-              <div class="otp filled">2</div>
-              <div class="otp filled">8</div>
-              <div class="otp caret"></div>
-            </div>
-            <div class="otp-meta">
-              <span>أُرسل الرمز إلى ‎+962 79 123 4567‎</span>
-              <b>إعادة الإرسال ٠:٣٢</b>
-            </div>
-
-            <button class="btn btn-primary">تحقّق ودخول</button>
-          </div>
-
-          <p class="terms">بالمتابعة أنت توافق على <b>شروط الاستخدام</b> و<b>سياسة الخصوصية</b></p>
-        </div>
-
-        <div class="home-ind"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= SCREEN 2 ======================= -->
-  <section class="screen">
-    <div class="cap">
-      <b>٢</b>
-      <div>
-        <h2>الرئيسية وإنشاء الطلب <small>Home</small></h2>
-        <p>الموقع، أنواع الأسطوانات، والكمية مع سعر واضح</p>
-      </div>
-    </div>
-
-    <div class="device">
-      <div class="phone">
-        <div class="island"></div>
-        <div class="statusbar">
-          <span>٩:٤١</span>
-          <div class="sig">
-            <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="1"/><rect x="4.6" y="5" width="3" height="6" rx="1"/><rect x="9.2" y="2.6" width="3" height="8.4" rx="1"/><rect x="13.8" y="0" width="3" height="11" rx="1"/></svg>
-            <svg width="15" height="11" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 4.2A11 11 0 0 1 15 4.2"/><path d="M3.6 6.8a7.2 7.2 0 0 1 8.8 0"/><circle cx="8" cy="10" r="1.1" fill="currentColor" stroke="none"/></svg>
-            <svg width="24" height="11" viewBox="0 0 24 12" fill="none"><rect x="0.6" y="0.6" width="20" height="10.8" rx="3" stroke="currentColor" stroke-opacity=".45"/><rect x="2.4" y="2.4" width="16" height="7.2" rx="1.8" fill="currentColor"/><path d="M22.4 4.2v3.6c1-.4 1.4-1 1.4-1.8s-.4-1.4-1.4-1.8Z" fill="currentColor" fill-opacity=".45"/></svg>
-          </div>
-        </div>
-
-        <div class="app-head">
-          <div class="greet-row">
-            <div class="avatar">ب</div>
-            <div class="greet">
-              <span>مساء الخير</span>
-              <b>بشار العظامات</b>
-            </div>
-            <div class="icon-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M18 8a6 6 0 1 0-12 0c0 6 2 7 2 7h8s2-1 2-7Z"/><path d="M10.3 20a2 2 0 0 0 3.4 0"/></svg>
-              <span class="dot"></span>
-            </div>
-          </div>
-
-          <div class="loc-pill">
-            <span class="loc-ico">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
-            </span>
-            <div class="lt">
-              <span>التوصيل إلى</span>
-              <b>المفرق — حي الفدين، شارع الجيش</b>
-            </div>
-            <span class="loc-change">تغيير</span>
-          </div>
-        </div>
-
-        <div class="map-strip">
-          <svg viewBox="0 0 338 84" preserveAspectRatio="none">
-            <rect width="338" height="84" fill="#F1F3EE"/>
-            <g stroke="#FFFFFF" stroke-width="6" stroke-linecap="round">
-              <path d="M-10 28 L348 18"/>
-              <path d="M-10 68 L348 78"/>
-              <path d="M100 -10 L80 94"/>
-              <path d="M236 -10 L258 94"/>
-            </g>
-            <g fill="#E6EBE2">
-              <rect x="112" y="32" width="46" height="26" rx="3"/>
-              <rect x="176" y="28" width="36" height="20" rx="3"/>
-              <rect x="272" y="26" width="50" height="24" rx="3"/>
-            </g>
-            <path d="M120 74 C 160 60, 190 44, 218 30" fill="none" stroke="#EE9B4C" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="7 6"/>
+    <div class="lp-price-grid">
+      <div class="lp-price-card lp-price-main">
+        <div class="lp-cylinder" aria-hidden="true">
+          <svg width="54" height="82" viewBox="0 0 34 52" fill="none">
+            <rect x="7" y="13" width="20" height="36" rx="8" fill="#EE9B4C"/>
+            <rect x="12" y="6" width="10" height="9" rx="3" fill="#5B3512"/>
+            <rect x="14.5" y="2" width="5" height="5" rx="2" fill="#5B3512" opacity=".7"/>
+            <rect x="10" y="22" width="3.5" height="18" rx="1.8" fill="#fff" opacity=".45"/>
           </svg>
-          <div class="marker" style="left:61%;top:14px;width:32px;height:32px;border-radius:50%;background:#fff;color:#4E8C74;border:2.5px solid #fff;box-shadow:0 6px 14px -8px rgba(60,48,34,.6)">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.2"/></svg>
-          </div>
-          <div class="mm-chip">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#4E8C74" stroke-width="2.6" stroke-linecap="round"><path d="M4 12h16M12 4v16"/></svg>
-            تحديد الموقع بدقة
-          </div>
         </div>
-
-        <div class="body-pad">
-          <div class="sec-head">
-            <h3>نوع الأسطوانة</h3>
-            <span>السعر الرسمي ٧٫٠٠</span>
-          </div>
-
-          <div class="cyl-grid">
-            <div class="cyl on">
-              <div class="sel">
-                <svg width="8" height="8" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6.4 4.6 9 10 3.2"/></svg>
-              </div>
-              <div class="art">
-                <svg width="24" height="38" viewBox="0 0 34 52" fill="none">
-                  <rect x="7" y="13" width="20" height="36" rx="8" fill="currentColor" opacity=".9"/>
-                  <rect x="12" y="6" width="10" height="9" rx="3" fill="currentColor"/>
-                  <rect x="14.5" y="2" width="5" height="5" rx="2" fill="currentColor" opacity=".65"/>
-                  <rect x="10" y="22" width="3.5" height="18" rx="1.8" fill="#fff" opacity=".4"/>
-                </svg>
-              </div>
-              <h4>أسطوانة حديد</h4>
-              <div class="sub">منزلية ١٢٫٥ كغم</div>
-              <div class="pr">7.00 <i>د.أ</i></div>
-            </div>
-
-            <div class="cyl two">
-              <div class="art">
-                <svg width="24" height="38" viewBox="0 0 34 52" fill="none">
-                  <rect x="8" y="12" width="18" height="37" rx="9" fill="currentColor" opacity=".8"/>
-                  <rect x="13" y="5" width="8" height="8" rx="3" fill="currentColor"/>
-                  <rect x="15" y="1.5" width="4" height="4" rx="2" fill="currentColor" opacity=".65"/>
-                  <rect x="11" y="20" width="3" height="20" rx="1.5" fill="#fff" opacity=".5"/>
-                </svg>
-              </div>
-              <h4>أسطوانة بلاستيك</h4>
-              <div class="sub">خفيفة — كومبوزيت</div>
-              <div class="pr">7.00 <i>د.أ</i></div>
-            </div>
-          </div>
-
-          <div class="qty-row">
-            <div class="qt">
-              <b>الكمية</b>
-              <span>
-                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#4FAF8B" stroke-width="3" stroke-linecap="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
-                تبديل أسطوانة فارغة بأخرى ممتلئة
-              </span>
-            </div>
-            <div class="stepper">
-              <button type="button">−</button>
-              <span class="n">1</span>
-              <button type="button">+</button>
-            </div>
-          </div>
-
-          <div class="price-card">
-            <div class="ph">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#4FAF8B" stroke-width="2"><path d="M12 3l7.5 3v5.5c0 4.6-3.1 8.3-7.5 9.5-4.4-1.2-7.5-4.9-7.5-9.5V6L12 3Z"/></svg>
-              سعر شفاف — بدون رسوم مخفية
-            </div>
-            <div class="prow"><span>سعر الأسطوانة <span class="dash">(× ١)</span></span><b>7.00 د.أ</b></div>
-            <div class="prow"><span>أجور التوصيل <span class="dash">(١٫٢ كم)</span></span><b>0.10 د.أ</b></div>
-            <div class="pdiv"></div>
-            <div class="ptotal">
-              <span>المجموع الكلي</span>
-              <span class="amt">7.10 <i>د.أ</i></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cta-wrap">
-          <button class="btn btn-primary">
-            اطلب الآن · 7.10 د.أ
-          </button>
-        </div>
-
-        <nav class="tabbar">
-          <div class="tab on">
-            <span class="tart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.8V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.8"/></svg></span>
-            الرئيسية
-          </div>
-          <div class="tab">
-            <span class="tart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="3.5"/><path d="M8.5 9h7M8.5 13h7M8.5 17h4"/></svg></span>
-            طلباتي
-          </div>
-          <div class="tab">
-            <span class="tart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13.5 13.5 20.5a2 2 0 0 1-2.8 0L3.5 13.3V4h9.3l7.7 7.7a1.9 1.9 0 0 1 0 1.8Z"/><circle cx="8" cy="8.4" r="1.3"/></svg></span>
-            العروض
-          </div>
-          <div class="tab">
-            <span class="tart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 20.2a7.4 7.4 0 0 1 14.4 0"/></svg></span>
-            حسابي
-          </div>
-        </nav>
-
-        <div class="home-ind"></div>
+        <h3>أسطوانة واحدة</h3>
+        <p class="lp-price-line"><span>سعر الأسطوانة</span><b>7.00 د.أ</b></p>
+        <p class="lp-price-line"><span>أجرة التوصيل</span><b>0.10 د.أ</b></p>
+        <p class="lp-price-total"><span>المجموع</span><b>7.10 <i>د.أ</i></b></p>
       </div>
-    </div>
-  </section>
 
-  <!-- ======================= SCREEN 3 ======================= -->
-  <section class="screen">
-    <div class="cap">
-      <b>٣</b>
-      <div>
-        <h2>تتبّع الطلب المباشر <small>Live Tracking</small></h2>
-        <p>خريطة المفرق، مراحل الطلب، وبطاقة الموزّع</p>
-      </div>
-    </div>
-
-    <div class="device">
-      <div class="phone">
-        <div class="island"></div>
-        <div class="statusbar">
-          <span>٩:٥٢</span>
-          <div class="sig">
-            <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="1"/><rect x="4.6" y="5" width="3" height="6" rx="1"/><rect x="9.2" y="2.6" width="3" height="8.4" rx="1"/><rect x="13.8" y="0" width="3" height="11" rx="1"/></svg>
-            <svg width="15" height="11" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 4.2A11 11 0 0 1 15 4.2"/><path d="M3.6 6.8a7.2 7.2 0 0 1 8.8 0"/><circle cx="8" cy="10" r="1.1" fill="currentColor" stroke="none"/></svg>
-            <svg width="24" height="11" viewBox="0 0 24 12" fill="none"><rect x="0.6" y="0.6" width="20" height="10.8" rx="3" stroke="currentColor" stroke-opacity=".45"/><rect x="2.4" y="2.4" width="16" height="7.2" rx="1.8" fill="currentColor"/><path d="M22.4 4.2v3.6c1-.4 1.4-1 1.4-1.8s-.4-1.4-1.4-1.8Z" fill="currentColor" fill-opacity=".45"/></svg>
-          </div>
-        </div>
-
-        <div class="map">
-          <svg viewBox="0 0 378 308" preserveAspectRatio="none">
-            <rect width="378" height="308" fill="#EEF2EC"/>
-            <g fill="#E4EADE">
-              <rect x="18" y="24" width="78" height="56" rx="4"/>
-              <rect x="120" y="12" width="64" height="44" rx="4"/>
-              <rect x="212" y="28" width="56" height="50" rx="4"/>
-              <rect x="294" y="14" width="72" height="68" rx="4"/>
-              <rect x="20" y="116" width="56" height="62" rx="4"/>
-              <rect x="102" y="104" width="68" height="44" rx="4"/>
-              <rect x="194" y="124" width="84" height="52" rx="4"/>
-              <rect x="304" y="110" width="62" height="76" rx="4"/>
-              <rect x="34" y="210" width="72" height="56" rx="4"/>
-              <rect x="130" y="198" width="58" height="68" rx="4"/>
-              <rect x="214" y="200" width="68" height="44" rx="4"/>
-              <rect x="304" y="214" width="58" height="58" rx="4"/>
-            </g>
-            <g stroke="#FFFFFF" stroke-width="13" stroke-linecap="round">
-              <path d="M-20 92 L400 84"/>
-              <path d="M-20 184 L400 190"/>
-              <path d="M-20 284 L400 290"/>
-              <path d="M96 -20 L108 330"/>
-              <path d="M290 -20 L282 330"/>
-            </g>
-            <g stroke="#F7E7D4" stroke-width="4">
-              <path d="M-20 238 L400 242"/>
-            </g>
-            <path d="M106 194 C 146 184, 176 162, 202 146 S 236 116, 246 92"
-                  fill="none" stroke="#EE9B4C" stroke-width="5" stroke-linecap="round" stroke-dasharray="9 8">
-              <animate attributeName="stroke-dashoffset" from="34" to="0" dur="1.2s" repeatCount="indefinite"/>
-            </path>
+      <div class="lp-price-card">
+        <div class="lp-cylinder two" aria-hidden="true">
+          <svg width="54" height="82" viewBox="0 0 44 52" fill="none">
+            <rect x="3" y="14" width="17" height="35" rx="8" fill="#4FAF8B" opacity=".85"/>
+            <rect x="24" y="11" width="18" height="38" rx="8" fill="#EE9B4C"/>
+            <rect x="6" y="7" width="9" height="8" rx="3" fill="#5B3512"/>
+            <rect x="28" y="4" width="9" height="8" rx="3" fill="#5B3512"/>
           </svg>
-
-          <div class="map-top">
-            <div class="mbtn">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
-            </div>
-            <div class="mpill">
-              <span style="width:6px;height:6px;border-radius:50%;background:#4FAF8B;display:inline-block"></span>
-              تتبّع الطلب · حي الفدين
-            </div>
-            <div class="mbtn" style="opacity:0;pointer-events:none"></div>
-          </div>
-
-          <div class="eta">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFD3A0" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/></svg>
-            يصل بعد <b>١٢ دقيقة</b>
-          </div>
-
-          <div class="marker home">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.8V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.8"/></svg>
-          </div>
-
-          <div class="marker driver">
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V7h9v9"/><path d="M12 10h4.5l3 3.2V16h-7.5"/><circle cx="7" cy="18" r="1.7"/><circle cx="16.5" cy="18" r="1.7"/></svg>
-          </div>
         </div>
+        <h3>أسطوانتان</h3>
+        <p class="lp-price-line"><span>2 × 7.00</span><b>14.00 د.أ</b></p>
+        <p class="lp-price-line"><span>أجرة التوصيل</span><b>0.10 د.أ</b></p>
+        <p class="lp-price-total"><span>المجموع</span><b>14.10 <i>د.أ</i></b></p>
+      </div>
 
-        <div class="sheet">
-          <div class="handle"></div>
-          <div class="sheet-head">
-            <b>الموزّع في الطريق إليك</b>
-            <span class="ordno">#MF-2841</span>
-          </div>
-
-          <div class="steps">
-            <span class="line"></span>
-            <span class="fill"></span>
-            <div class="step done">
-              <span class="bub">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
-              </span>
-              <span>تم الاستلام</span>
-            </div>
-            <div class="step now">
-              <span class="bub">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V7h9v9"/><path d="M12 10h4.5l3 3.2V16h-7.5"/><circle cx="7" cy="18" r="1.6"/><circle cx="16.5" cy="18" r="1.6"/></svg>
-              </span>
-              <span>في الطريق</span>
-            </div>
-            <div class="step">
-              <span class="bub">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.8V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.8"/></svg>
-              </span>
-              <span>وصل الموزّع</span>
-            </div>
-          </div>
-
-          <div class="driver">
-            <div class="driver-top">
-              <img src="avatar.jpg" alt="صورة الموزّع" />
-              <div class="dv">
-                <b>مؤسسة الفدين للغاز</b>
-                <div class="badge-row">
-                  <span class="vbadge">
-                    <svg width="7" height="7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
-                    وكالة معتمدة
-                  </span>
-                  <span class="plate">ديانا · ٢٤٧٨٩</span>
-                </div>
-              </div>
-              <div class="rate">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5-5.9-3.2-5.9 3.2 1.2-6.5L2.5 9.5l6.6-.9 2.9-6Z"/></svg>
-                4.9
-              </div>
-            </div>
-            <div class="driver-actions">
-              <button class="dbtn call">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4-2 1.4a11 11 0 0 0 5.6 5.6l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z"/></svg>
-                اتصال
-              </button>
-              <button class="dbtn wa">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A9.9 9.9 0 1 0 12 2Zm5.3 14c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1a11.6 11.6 0 0 1-5.6-4.6c-.6-1-.9-1.8-.7-2.5.1-.5.6-1.2 1-1.4.3-.2.8-.1 1 .3l.7 1.5c.1.3 0 .5-.2.7l-.5.5c-.1.2-.2.4 0 .6a8 8 0 0 0 3 2.7c.3.1.5 0 .6-.1l.6-.7c.2-.2.4-.2.7-.1l1.5.8c.3.2.4.7.3 1Z"/></svg>
-                واتساب
-              </button>
-            </div>
-          </div>
-
-          <div class="sumline">
-            <div class="sl">
-              <svg width="13" height="13" viewBox="0 0 34 52" fill="none" stroke="#7E8895" stroke-width="2.8"><rect x="8" y="14" width="18" height="33" rx="8"/><rect x="13" y="7" width="8" height="7" rx="2.5"/></svg>
-              <span>أسطوانة حديد × <b>1</b> · نقداً عند التسليم</span>
-            </div>
-            <div class="tot">7.10 د.أ</div>
-          </div>
-
-          <div class="tnote">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.2"/></svg>
-            <span>ملاحظة للموزّع: <b>الطابق الثاني — يرجى الاتصال قبل الوصول</b><br>العنوان: حي الفدين، شارع الجيش، بناية ٢٤</span>
-          </div>
-        </div>
-
-        <div class="track-foot">
-          <button class="cancel">إلغاء الطلب — قد يُطبَّق رسم إلغاء بعد قبول الموزّع</button>
-        </div>
-
-        <div class="home-ind"></div>
+      <div class="lp-price-card">
+        <h3>كم تدفع؟</h3>
+        <table class="lp-table">
+          <thead>
+            <tr><th>الكمية</th><th>الأسطوانات</th><th>التوصيل</th><th>المجموع</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>١</td><td>7.00</td><td>0.10</td><td><b>7.10</b></td></tr>
+            <tr><td>٢</td><td>14.00</td><td>0.10</td><td><b>14.10</b></td></tr>
+            <tr><td>٣</td><td>21.00</td><td>0.10</td><td><b>21.10</b></td></tr>
+            <tr><td>٤</td><td>28.00</td><td>0.10</td><td><b>28.10</b></td></tr>
+          </tbody>
+        </table>
+        <p class="lp-note">الأسعار بالدينار الأردني. تُقرأ من الخادم داخل التطبيق ولا تُثبَّت في الواجهة.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ======================= SCREEN 4 ======================= -->
-  <section class="screen">
-    <div class="cap">
-      <b>٤</b>
-      <div>
-        <h2>واجهة الموزّع / صاحب الديانا <small>Driver</small></h2>
-        <p>حالة الاستقبال، إحصاءات اليوم، وتنبيه الطلب الجديد</p>
-      </div>
+<!-- ============ HOW ============ -->
+<section class="lp-section lp-section-alt" id="how">
+  <div class="wrap">
+    <div class="lp-sec-head">
+      <span class="lp-tag">أربع خطوات</span>
+      <h2>من الطلب إلى باب البيت</h2>
+      <p>بدون مكالمات ولا انتظار طويل. كل شيء داخل التطبيق، ورقم الطلب أمامك حتى التسليم.</p>
     </div>
 
-    <div class="device">
-      <div class="phone">
-        <div class="island"></div>
-        <div class="statusbar">
-          <span>٩:٤١</span>
-          <div class="sig">
-            <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="1"/><rect x="4.6" y="5" width="3" height="6" rx="1"/><rect x="9.2" y="2.6" width="3" height="8.4" rx="1"/><rect x="13.8" y="0" width="3" height="11" rx="1"/></svg>
-            <svg width="15" height="11" viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 4.2A11 11 0 0 1 15 4.2"/><path d="M3.6 6.8a7.2 7.2 0 0 1 8.8 0"/><circle cx="8" cy="10" r="1.1" fill="currentColor" stroke="none"/></svg>
-            <svg width="24" height="11" viewBox="0 0 24 12" fill="none"><rect x="0.6" y="0.6" width="20" height="10.8" rx="3" stroke="currentColor" stroke-opacity=".45"/><rect x="2.4" y="2.4" width="16" height="7.2" rx="1.8" fill="currentColor"/><path d="M22.4 4.2v3.6c1-.4 1.4-1 1.4-1.8s-.4-1.4-1.4-1.8Z" fill="currentColor" fill-opacity=".45"/></svg>
-          </div>
+    <ol class="lp-steps">
+      <li>
+        <span class="num">١</span>
+        <h3>سجّل برقم هاتفك</h3>
+        <p>رقم أردني ورمز تحقق قصير. لا كلمات مرور ولا بيانات معقّدة.</p>
+      </li>
+      <li>
+        <span class="num">٢</span>
+        <h3>اختر الأسطوانة والكمية</h3>
+        <p>حديد أو بلاستيك بنفس السعر، مع ملخص فاتورة واضح قبل التأكيد.</p>
+      </li>
+      <li>
+        <span class="num">٣</span>
+        <h3>تابع الموزّع على الخريطة</h3>
+        <p>حالة الطلب ووقت الوصول المتوقّع ورقم الموزّع أمامك مباشرة.</p>
+      </li>
+      <li>
+        <span class="num">٤</span>
+        <h3>استلم وادفع نقداً</h3>
+        <p>سلّم الأسطوانة الفارغة واستلم الممتلئة، وادفع 7.10 د.أ عند الباب.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="lp-section">
+  <div class="wrap">
+    <div class="lp-sec-head">
+      <span class="lp-tag">لماذا جَرّتي</span>
+      <h2>مصمّم لبيوت المفرق</h2>
+    </div>
+
+    <div class="lp-features">
+      <article class="lp-feature">
+        <span class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+        </span>
+        <h3>تغطية أحياء المفرق</h3>
+        <p>المفرق، الفدين، الجديدة، بلعما، المنشية، وأحياء المدينة كافة — مع عناوين محفوظة لكل بيت.</p>
+      </article>
+
+      <article class="lp-feature">
+        <span class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M3 11h18"/><path d="M7 16h4"/></svg>
+        </span>
+        <h3>دفع نقدي بسيط</h3>
+        <p>لا بطاقات ولا محافظ إلكترونية. تدفع عند التسليم، وتستطيع الدفع بعملات معدنية صغيرة.</p>
+      </article>
+
+      <article class="lp-feature">
+        <span class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/></svg>
+        </span>
+        <h3>تتبّع بالدقيقة</h3>
+        <p>قيد الانتظار، تم القبول، في الطريق، تم التسليم — مع وقت وصول متوقّع وخط سير الموزّع.</p>
+      </article>
+
+      <article class="lp-feature">
+        <span class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16V7h9v9"/><path d="M12 10h4.5l3 3.2V16h-7.5"/><circle cx="7" cy="18" r="1.7"/><circle cx="16.5" cy="18" r="1.7"/></svg>
+        </span>
+        <h3>موزّعون معتمدون</h3>
+        <p>كل موزّع مرتبط بمنطقته، ويستلم الطلبات القريبة منه فقط، مع تأكيد تسليم ورقم طلب.</p>
+      </article>
+
+      <article class="lp-feature">
+        <span class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v12H4z"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/><path d="M4 12h16"/></svg>
+        </span>
+        <h3>إعادة الطلب بضغطة</h3>
+        <p>سجل طلباتك محفوظ، وأسطوانتك المعتادة تُطلب مرة أخرى دون إعادة كتابة العنوان.</p>
+      </article>
+
+      <article class="lp-feature">
+        <span class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        </span>
+        <h3>لوحة لصاحب الديانة</h3>
+        <p>طلبات اليوم، المبالغ المحصّلة، إدارة الموزّعين والمناطق — من شاشة واحدة بسيطة.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCREENS TEASER ============ -->
+<section class="lp-section lp-section-alt" id="screens">
+  <div class="wrap lp-screens">
+    <div class="lp-screens-copy">
+      <span class="lp-tag">داخل التطبيق</span>
+      <h2>شاشات هادئة وواضحة</h2>
+      <p>
+        عربية كاملة من اليمين إلى اليسار، خط Cairo كبير ومريح، وزر رئيسي واحد في كل شاشة.
+        الأسعار بخط ثقيل، والخطوات ظاهرة دون تخمين.
+      </p>
+      <ul class="lp-checks">
+        <li>تسجيل بالهاتف ورمز التحقق OTP</li>
+        <li>الرئيسية: النوع، الكمية، العنوان، وملخص الفاتورة</li>
+        <li>تتبّع الطلب مع خريطة ووقت الوصول</li>
+        <li>سجل الطلبات وإعادة الطلب</li>
+        <li>واجهة الموزّع وصاحب الديانة</li>
+      </ul>
+      <a class="lp-btn lp-btn-primary" href="screens.html">شاهد الشاشات الأربع</a>
+    </div>
+
+    <div class="lp-phones" aria-hidden="true">
+      <div class="lp-phone lp-phone-back">
+        <div class="lp-phone-bar"></div>
+        <div class="ph-line w70"></div>
+        <div class="ph-card"><span class="ph-ico"></span><span class="ph-line w50"></span></div>
+        <div class="ph-card"><span class="ph-ico mint"></span><span class="ph-line w60"></span></div>
+        <div class="ph-price">7.10 <i>د.أ</i></div>
+      </div>
+
+      <div class="lp-phone lp-phone-front">
+        <div class="lp-phone-bar"></div>
+        <div class="ph-loc"><span></span><div class="ph-line w55"></div></div>
+        <div class="ph-map">
+          <svg viewBox="0 0 220 90" preserveAspectRatio="none">
+            <rect width="220" height="90" fill="#EEF2EC"/>
+            <g stroke="#fff" stroke-width="7" stroke-linecap="round">
+              <path d="M-10 24 L230 18"/><path d="M-10 66 L230 72"/><path d="M70 -10 L60 100"/><path d="M164 -10 L174 100"/>
+            </g>
+            <path d="M48 78 C 90 62, 120 40, 152 26" fill="none" stroke="#EE9B4C" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 6"/>
+          </svg>
+          <span class="ph-pin"></span>
         </div>
-
-        <div class="d-head">
-          <div class="greet-row">
-            <div class="avatar">أ</div>
-            <div class="greet">
-              <span>مساء الخير</span>
-              <b>أبو محمد — وكالة الفدين</b>
-            </div>
-            <div class="icon-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M18 8a6 6 0 1 0-12 0c0 6 2 7 2 7h8s2-1 2-7Z"/><path d="M10.3 20a2 2 0 0 0 3.4 0"/></svg>
-            </div>
-          </div>
-
-          <div class="avail">
-            <span class="live-dot"></span>
-            <div class="tx">
-              <b>متاح لاستقبال الطلبات</b>
-              <span>نطاق ٣ كم · داخل المفرق</span>
-            </div>
-            <div class="switch"></div>
-          </div>
-
-          <div class="d-stats">
-            <div class="stat"><b>٨</b><span>طلبات اليوم</span></div>
-            <div class="stat"><b>64.00</b><span>د.أ مبيعات</span></div>
-            <div class="stat"><b>4.9 ★</b><span>تقييمك</span></div>
-          </div>
-        </div>
-
-        <div class="d-body">
-          <div class="neworder">
-            <div class="no-head">
-              <div class="ttl"><span class="dot"></span> طلب جديد قريب منك</div>
-              <div class="timer">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3 1.8"/></svg>
-                00:28
-              </div>
-            </div>
-
-            <div class="dist">
-              <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.2"/></svg>
-              1.5 كم عن موقعك · حي الجديدة
-            </div>
-
-            <div class="cust">
-              <div class="cav">أ.أ</div>
-              <div class="cinfo">
-                <b>أم أحمد</b>
-                <span>المفرق — حي الجديدة، شارع المستشفى، قرب مسجد الفرقان</span>
-              </div>
-            </div>
-
-            <div class="odetails">
-              <div class="od">الكمية المطلوبة <b>٢ أسطوانات حديد</b></div>
-              <div class="od">طريقة الدفع <b>نقداً عند التسليم</b></div>
-            </div>
-
-            <div class="cash">
-              <span>المبلغ المطلوب تحصيله</span>
-              <b>14.10 <i>د.أ</i></b>
-            </div>
-
-            <div class="o-actions">
-              <button class="btn btn-primary">
-                قبول الطلب
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
-              </button>
-              <button class="btn reject">رفض</button>
-            </div>
-          </div>
-
-          <div class="listhead">
-            <h3>آخر الطلبات المكتملة</h3>
-            <a href="#">عرض الكل</a>
-          </div>
-
-          <div class="hist">
-            <div class="hi">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
-            </div>
-            <div class="htx">
-              <b>حي الفدين — ٢ أسطوانات</b>
-              <span>٩:١٨ ص · تم التسليم نقداً</span>
-            </div>
-            <div class="amt">14.10 د.أ</div>
-          </div>
-
-          <div class="hist">
-            <div class="hi">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
-            </div>
-            <div class="htx">
-              <b>حي الجديدة — أسطوانة واحدة</b>
-              <span>٨:٤٢ ص · تم التسليم نقداً</span>
-            </div>
-            <div class="amt">7.10 د.أ</div>
-          </div>
-        </div>
-
-        <nav class="tabbar">
-          <div class="tab on">
-            <span class="tart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="3.5"/><path d="M8.5 9h7M8.5 13h7M8.5 17h4"/></svg></span>
-            الطلبات
-          </div>
-          <div class="tab">
-            <span class="tart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v12H4z"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/><path d="M4 12h16"/></svg></span>
-            الأرباح
-          </div>
-          <div class="tab">
-            <span class="tart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
-            التقارير
-          </div>
-          <div class="tab">
-            <span class="tart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 20.2a7.4 7.4 0 0 1 14.4 0"/></svg></span>
-            حسابي
-          </div>
-        </nav>
-
-        <div class="home-ind"></div>
+        <div class="ph-card"><span class="ph-ico"></span><div><div class="ph-line w70"></div><div class="ph-line w40"></div></div></div>
+        <div class="ph-price">7.10 <i>د.أ</i></div>
+        <div class="ph-btn">اطلب الآن</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- ============ AREAS ============ -->
+<section class="lp-section" id="areas">
+  <div class="wrap">
+    <div class="lp-sec-head">
+      <span class="lp-tag">التغطية</span>
+      <h2>نخدم المفرق وضواحيها</h2>
+      <p>اختر منطقتك من التطبيق، وسيصل الطلب إلى أقرب موزّع معتمد إليها.</p>
+    </div>
+    <ul class="lp-areas">
+      <li><span class="pin"></span>المفرق — وسط البلد</li>
+      <li><span class="pin"></span>حي الفدين</li>
+      <li><span class="pin"></span>حي الجديدة</li>
+      <li><span class="pin"></span>بلعما</li>
+      <li><span class="pin"></span>المنشية</li>
+      <li><span class="pin"></span>حي الحسين</li>
+      <li><span class="pin"></span>أم اللولو</li>
+      <li><span class="pin"></span>الخالدية</li>
+      <li><span class="pin"></span>حي الجيش</li>
+      <li><span class="pin"></span>المدينة الصناعية</li>
+    </ul>
+    <p class="lp-areas-note">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M12 12v4"/></svg>
+      المناطق القريبة من مركز المدينة تُخدم عادةً خلال ١٥–٢٥ دقيقة حسب توفر الموزّعين.
+    </p>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD ============ -->
+<section class="lp-download" id="download">
+  <div class="wrap lp-download-in">
+    <div>
+      <span class="lp-tag light">التطبيق</span>
+      <h2>جاهز لتجربة جَرّتي؟</h2>
+      <p>نسخة أندرويد وiOS قيد التجهيز. حتى ذلك الحين، شاهد شاشات التطبيق الكاملة وتعرّف على التجربة قبل التنزيل.</p>
+      <div class="lp-hero-actions">
+        <a class="lp-btn lp-btn-light" href="screens.html">استعرض الشاشات</a>
+        <a class="lp-btn lp-btn-outline-light" href="#faq">الأسئلة الشائعة</a>
+      </div>
+      <p class="lp-fineprint">
+        متوفّر قريباً على Google Play وApp Store — إصدار المفرق.
+      </p>
+    </div>
+    <div class="lp-download-badge" aria-hidden="true">
+      <svg width="56" height="64" viewBox="0 0 24 26" fill="none">
+        <path d="M12 1.6c3.4 3.9 7.2 7.2 7.2 12.1a7.2 7.2 0 1 1-14.4 0C4.8 8.8 8.6 5.5 12 1.6Z" fill="#FFF6E8"/>
+        <path d="M12 12.4c1.6 1.9 3.1 3.3 3.1 5.2a3.1 3.1 0 1 1-6.2 0c0-1.9 1.5-3.3 3.1-5.2Z" fill="#EE9B4C"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="lp-section" id="faq">
+  <div class="wrap">
+    <div class="lp-sec-head">
+      <span class="lp-tag">الأسئلة الشائعة</span>
+      <h2>كل ما تحتاج معرفته</h2>
+    </div>
+
+    <div class="lp-faq">
+      <details open>
+        <summary>كم سعر الأسطوانة والتوصيل؟</summary>
+        <p>سعر الأسطوانة 7.00 د.أ، حديد أو بلاستيك بنفس السعر. أجرة التوصيل 0.10 د.أ لكل طلب — تُدفع مرة واحدة مهما كان عدد الأسطوانات. أسطوانة واحدة = 7.10 د.أ، وأسطوانتان = 14.10 د.أ.</p>
+      </details>
+      <details>
+        <summary>هل أستطيع الدفع بعملات معدنية؟</summary>
+        <p>نعم. الدفع نقداً عند التسليم، ويمكنك الدفع بعملات ورقية أو معدنية صغيرة. يُرجى تجهيز المبلغ قبل وصول الموزّع لتسريع التسليم.</p>
+      </details>
+      <details>
+        <summary>هل يجب أن أسلّم الأسطوانة الفارغة؟</summary>
+        <p>نعم، الخدمة تبديل: تستلم أسطوانة ممتلئة مفحوصة وتسلّم الفارغة للموزّع في نفس الوقت.</p>
+      </details>
+      <details>
+        <summary>ما الفرق بين الحديد والبلاستيك؟</summary>
+        <p>الأسطوانة الحديدية منزلية ١٢٫٥ كغم، والبلاستيكية (كومبوزيت) أخف وزناً وأسهل للحمل. السعر واحد: 7.00 د.أ.</p>
+      </details>
+      <details>
+        <summary>كيف أتابع طلبي؟</summary>
+        <p>بعد تأكيد الطلب يظهر رقم الطلب وحالته: قيد الانتظار، تم القبول، الموزّع في الطريق، تم التسليم — مع وقت وصول متوقّع وبيانات الموزّع.</p>
+      </details>
+      <details>
+        <summary>هل يمكنني إلغاء الطلب؟</summary>
+        <p>يمكن الإلغاء قبل قبول الموزّع دون رسوم. بعد القبول قد يُطبَّق رسم إلغاء بسيط لتغطية مشوار الموزّع.</p>
+      </details>
+    </div>
+  </div>
+</section>
 
 </main>
 
-<section class="notes">
-  <div class="note">
-    <h4>نظام الألوان</h4>
-    <p>مشمشي دافئ للحركة والطلب، كحلي هادئ للنصوص، وأخضر نعناعي خفيف للثقة والتأكيد — على خلفية كريمية مريحة للعين.</p>
-    <div class="sws">
-      <div><i style="background:#EE9B4C"></i><em>#EE9B4C</em></div>
-      <div><i style="background:#F8BF86"></i><em>#F8BF86</em></div>
-      <div><i style="background:#33475F"></i><em>#33475F</em></div>
-      <div><i style="background:#4FAF8B"></i><em>#4FAF8B</em></div>
-      <div><i style="background:#FCFAF7"></i><em>#FCFAF7</em></div>
-      <div><i style="background:#FFF8EF"></i><em>#FFF8EF</em></div>
+<!-- ============ FOOTER ============ -->
+<footer class="lp-footer">
+  <div class="wrap lp-footer-grid">
+    <div>
+      <a class="lp-brand" href="index.html">
+        <span class="lp-mark">
+          <svg width="22" height="25" viewBox="0 0 24 26" fill="none">
+            <path d="M12 1.6c3.4 3.9 7.2 7.2 7.2 12.1a7.2 7.2 0 1 1-14.4 0C4.8 8.8 8.6 5.5 12 1.6Z" fill="#EE9B4C"/>
+            <path d="M12 12.4c1.6 1.9 3.1 3.3 3.1 5.2a3.1 3.1 0 1 1-6.2 0c0-1.9 1.5-3.3 3.1-5.2Z" fill="#FFF6E8"/>
+          </svg>
+        </span>
+        <span class="lp-brand-tx"><b>جَرّتي</b><small>غاز المفرّق إلى بابك</small></span>
+      </a>
+      <p class="lp-footer-about">
+        خدمة تبديل وتوصيل أسطوانات الغاز في مدينة المفرق، بأيدي موزّعين معتمدين
+        وبسعر ثابت وواضح.
+      </p>
+    </div>
+
+    <div class="lp-footer-col">
+      <h4>الموقع</h4>
+      <a href="#how">كيف يعمل</a>
+      <a href="#pricing">الأسعار</a>
+      <a href="#areas">المناطق</a>
+      <a href="screens.html">شاشات التطبيق</a>
+    </div>
+
+    <div class="lp-footer-col">
+      <h4>الخدمة</h4>
+      <p>المفرق — الأردن</p>
+      <p>الدفع: نقداً عند التسليم</p>
+      <p>ساعات العمل: ٧:٠٠ ص — ١١:٠٠ م</p>
+    </div>
+
+    <div class="lp-footer-col">
+      <h4>الدعم</h4>
+      <p>واتساب الدعم: يُضاف قريباً</p>
+      <p>للموزّعين وأصحاب الديانات: يُضاف قريباً</p>
+      <a href="https://github.com/bash121213-ops/jarti-gas-mafraq">المستودع على GitHub</a>
     </div>
   </div>
-  <div class="note">
-    <h4>الخطوط والتنفّس</h4>
-    <p>خط Cairo بأوزان ٧٠٠–٩٠٠ للعناوين و٤٠٠–٦٠٠ للنصوص. زوايا ١٦–٢٦ بكسل، وظلال ناعمة جداً بدل الحدود الثقيلة، ومسافات داخلية ١٢–٢٠ بكسل لراحة العين.</p>
+
+  <div class="wrap lp-footer-bottom">
+    <span>© ٢٠٢٦ جَرّتي — المفرق، الأردن.</span>
+    <span>الأسعار: 7.00 د.أ للأسطوانة + 0.10 د.أ توصيل.</span>
   </div>
-  <div class="note">
-    <h4>سهولة الاستخدام</h4>
-    <p>زر رئيسي واحد واضح في كل شاشة، مساحات لمس ٤٤ بكسل فأكثر، تخطيط RTL كامل، وأرقام الأسعار بخط ثقيل مع وحدة «د.أ» — وأسماء أحياء مفرق واقعية: الفدين، الجديدة، الحسين، أم اللولو، وقرى: بلعما، المنشية، الخالدية.</p>
-  </div>
-</section>
+</footer>
 
 </body>
 </html>
