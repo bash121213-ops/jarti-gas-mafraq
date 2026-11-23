@@ -85,6 +85,22 @@ open ios/Runner.xcworkspace
 
 اختر الفريق (Signing Team) في Xcode ثم Run. مشروع `ios/` جاهز للبناء من Xcode.
 
+### الأيقونة وشاشة البداية
+
+أيقونة التطبيق هي هوية جَرّتي: مربّع كهرماني متدرّج يحمل أسطوانة غاز كريمية بمقبض كحلي. وُلدت من الكود لا من ملف تصميم، لذا يمكن إعادة توليدها أو تعديلها بأمر واحد:
+
+```bash
+cd app
+python3 tool/generate_brand_icons.py   # يتطلب Pillow
+```
+
+يُحدَّث تلقائياً:
+
+- أندرويد: `ic_launcher` و`ic_launcher_round` لكل كثافة، و`ic_launcher_foreground` للأيقونة التكيّفية (Android 8+)، وشعار شاشة البداية `launch_logo`.
+- iOS: كل مقاسات `AppIcon.appiconset` (1024 بلا شفافية كما تشترط Apple) وصور `LaunchImage`.
+
+شاشة البداية الأصلية (native splash) تظهر بخلفية كريمية `#FCFAF7` مع شعار الأسطوانة في المنتصف: عبر `launch_background.xml` حتى أندرويد 11، و`windowSplashScreen*` في `values-v31` لأندرويد 12+، و`LaunchScreen.storyboard` على iOS. الألوان معرّفة في `android/app/src/main/res/values/colors.xml`.
+
 ## لماذا Supabase؟
 
 اخترت **Supabase** بدل Firebase لأن:
