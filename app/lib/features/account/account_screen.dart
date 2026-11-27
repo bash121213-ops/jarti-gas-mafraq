@@ -59,28 +59,29 @@ class AccountScreen extends StatelessWidget {
     final user = state.user;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('حسابي')),
+      appBar: AppBar(title: const Text('حسابي'), backgroundColor: const Color(0xFFF6F7F3)),
       body: ListView(
-        padding: const EdgeInsets.fromLTRB(20, 8, 20, 30),
+        padding: const EdgeInsets.fromLTRB(18, 10, 18, 30),
         children: [
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(22),
-              border: Border.all(color: AppColors.line),
+              borderRadius: BorderRadius.circular(24),
+              border: Border.all(color: const Color(0xFFE8ECE6)),
+              boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: .025), blurRadius: 14, offset: const Offset(0, 5))],
             ),
             child: Row(
               children: [
                 CircleAvatar(
                   radius: 28,
-                  backgroundColor: AppColors.creamDeep,
+                  backgroundColor: const Color(0xFFEAF2EC),
                   child: Text(
                     (user?.displayName ?? 'ج').characters.first,
                     style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w900,
-                      color: AppColors.apricotInk,
+                      color: const Color(0xFF39745F),
                     ),
                   ),
                 ),
@@ -113,7 +114,7 @@ class AccountScreen extends StatelessWidget {
                           vertical: 3,
                         ),
                         decoration: BoxDecoration(
-                          color: AppColors.creamDeep,
+                          color: const Color(0xFFEAF2EC),
                           borderRadius: BorderRadius.circular(999),
                         ),
                         child: Text(
@@ -121,7 +122,7 @@ class AccountScreen extends StatelessWidget {
                           style: const TextStyle(
                             fontSize: 10,
                             fontWeight: FontWeight.w700,
-                            color: AppColors.apricotInk,
+                            color: const Color(0xFF39745F),
                           ),
                         ),
                       ),
