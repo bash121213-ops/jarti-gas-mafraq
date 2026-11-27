@@ -34,11 +34,11 @@ class OrdersScreen extends StatelessWidget {
     final state = AppScope.of(context);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('طلباتي')),
+      appBar: AppBar(title: const Text('طلباتي'), backgroundColor: const Color(0xFFF6F7F3)),
       body: state.orders.isEmpty
           ? const _EmptyOrders()
           : ListView.separated(
-              padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
+              padding: const EdgeInsets.fromLTRB(18, 10, 18, 28),
               itemCount: state.orders.length,
               separatorBuilder: (_, _) => const SizedBox(height: 12),
               itemBuilder: (context, index) {
@@ -48,8 +48,9 @@ class OrdersScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: AppColors.line),
+                    borderRadius: BorderRadius.circular(23),
+                    border: Border.all(color: const Color(0xFFE8ECE6)),
+                    boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: .025), blurRadius: 14, offset: const Offset(0, 5))],
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,13 +61,13 @@ class OrdersScreen extends StatelessWidget {
                             width: 36,
                             height: 36,
                             decoration: BoxDecoration(
-                              color: AppColors.creamDeep,
-                              borderRadius: BorderRadius.circular(12),
+                              color: const Color(0xFFEAF2EC),
+                              borderRadius: BorderRadius.circular(13),
                             ),
                             child: const Icon(
                               Icons.propane_tank,
                               size: 20,
-                              color: AppColors.apricotInk,
+                              color: const Color(0xFF39745F),
                             ),
                           ),
                           const SizedBox(width: 10),
