@@ -8,7 +8,6 @@ import '../../data/models/cylinder_type.dart';
 import '../../shared/widgets/address_sheet.dart';
 import '../../shared/widgets/map_preview.dart';
 import '../../shared/widgets/price_summary.dart';
-import '../../shared/widgets/section_title.dart';
 import '../../state/app_state.dart';
 import '../tracking/tracking_screen.dart';
 
@@ -304,7 +303,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             const SizedBox(height: 12),
-            ClipRRect(borderRadius: BorderRadius.circular(19), child: const MapPreview(height: 82)),
+            ClipRRect(borderRadius: BorderRadius.circular(19), child: MapPreview(height: 82)),
             const SizedBox(height: 25),
             const Text('اختَر أسطوانتك', style: TextStyle(fontSize: 19, fontWeight: FontWeight.w900, color: AppColors.navy)),
             const SizedBox(height: 4),
