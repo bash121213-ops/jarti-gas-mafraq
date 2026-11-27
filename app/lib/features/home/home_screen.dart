@@ -254,7 +254,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 18),
             if (!state.isCustomer) ...[
-              const _DriverNotice(),
+              _DriverNotice(),
               const SizedBox(height: 14),
             ],
             if (active != null) ...[
