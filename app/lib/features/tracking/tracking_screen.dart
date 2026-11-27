@@ -97,7 +97,7 @@ class TrackingScreen extends StatelessWidget {
         ),
       ),
       body: ListView(
-        padding: const EdgeInsets.fromLTRB(20, 8, 20, 30),
+        padding: const EdgeInsets.fromLTRB(18, 10, 18, 30),
         children: [
           MapPreview(
             height: 220,
@@ -112,13 +112,13 @@ class TrackingScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.white.withValues(alpha: 0.95),
                   borderRadius: BorderRadius.circular(999),
-                  border: Border.all(color: AppColors.line),
+                  border: Border.all(color: const Color(0xFFE8ECE6)),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     const Icon(Icons.schedule_rounded,
-                        size: 13, color: AppColors.apricotInk),
+                        size: 13, color: const Color(0xFF39745F)),
                     const SizedBox(width: 5),
                     Text(
                       order.status == OrderStatus.delivered
@@ -215,7 +215,7 @@ class TrackingScreen extends StatelessWidget {
                       backgroundColor: AppColors.creamDeep,
                       child: const Icon(
                         Icons.storefront_outlined,
-                        color: AppColors.apricotInk,
+                        color: const Color(0xFF39745F),
                       ),
                     ),
                     const SizedBox(width: 12),
