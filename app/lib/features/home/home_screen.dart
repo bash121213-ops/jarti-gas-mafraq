@@ -443,83 +443,75 @@ class _CylinderOption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(20),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 180),
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: selected ? AppColors.creamDeep : Colors.white,
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-            color: selected ? AppColors.apricot : AppColors.line,
-            width: selected ? 1.8 : 1,
+    final isSteel = type == CylinderType.steel;
+    final accent = isSteel ? const Color(0xFF39745F) : const Color(0xFFC98243);
+    final tint = isSteel ? const Color(0xFFEAF2EC) : const Color(0xFFFFF1E2);
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(22),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 220),
+          curve: Curves.easeOutCubic,
+          padding: const EdgeInsets.fromLTRB(13, 13, 13, 15),
+          decoration: BoxDecoration(
+            color: selected ? tint : Colors.white,
+            borderRadius: BorderRadius.circular(22),
+            border: Border.all(
+              color: selected ? accent.withValues(alpha: .65) : const Color(0xFFE8ECE6),
+              width: selected ? 1.6 : 1,
+            ),
+            boxShadow: selected
+                ? [BoxShadow(color: accent.withValues(alpha: .09), blurRadius: 15, offset: const Offset(0, 6))]
+                : [],
           ),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Container(
-                  width: 34,
-                  height: 34,
-                  decoration: BoxDecoration(
-                    color: selected
-                        ? AppColors.apricot.withValues(alpha: 0.16)
-                        : AppColors.cream,
-                    borderRadius: BorderRadius.circular(11),
-                  ),
-                  child: Icon(
-                    Icons.propane_tank,
-                    size: 20,
-                    color: selected ? AppColors.apricotInk : AppColors.muted,
-                  ),
-                ),
-                const Spacer(),
-                AnimatedContainer(
-                  duration: const Duration(milliseconds: 180),
-                  width: 20,
-                  height: 20,
-                  decoration: BoxDecoration(
-                    color: selected ? AppColors.apricot : Colors.white,
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: selected ? AppColors.apricot : AppColors.line,
-                      width: 1.5,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(isSteel ? 'الأكثر طلباً' : 'خفيفة وعملية',
+                    style: TextStyle(fontSize: 9.5, color: accent, fontWeight: FontWeight.w800)),
+                  const Spacer(),
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 180),
+                    width: 21, height: 21,
+                    decoration: BoxDecoration(
+                      color: selected ? accent : Colors.white,
+                      shape: BoxShape.circle,
+                      border: Border.all(color: selected ? accent : const Color(0xFFDCE3DC), width: 1.4),
                     ),
+                    child: selected ? const Icon(Icons.check_rounded, color: Colors.white, size: 14) : null,
                   ),
-                  child: selected
-                      ? const Icon(Icons.check_rounded,
-                          size: 13, color: Colors.white)
-                      : null,
+                ],
+              ),
+              const SizedBox(height: 8),
+              Center(
+                child: AnimatedScale(
+                  scale: selected ? 1.04 : 1,
+                  duration: const Duration(milliseconds: 220),
+                  child: Container(
+                    width: 74, height: 88,
+                    decoration: BoxDecoration(
+                      color: accent.withValues(alpha: .09),
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                    child: Icon(Icons.propane_tank_rounded, size: 61, color: accent),
+                  ),
                 ),
-              ],
-            ),
-            const SizedBox(height: 12),
-            Text(
-              'أسطوانة ${type.label}',
-              style: const TextStyle(
-                fontSize: 14.5,
-                fontWeight: FontWeight.w800,
               ),
-            ),
-            const SizedBox(height: 2),
-            Text(
-              type.subtitle,
-              style: const TextStyle(fontSize: 11, color: AppColors.muted),
-            ),
-            const SizedBox(height: 10),
-            Text(
-              formatMoney(price),
-              style: const TextStyle(
-                fontSize: 17,
-                fontWeight: FontWeight.w900,
-                color: AppColors.navy,
-              ),
-            ),
-          ],
+              const SizedBox(height: 10),
+              Text('أسطوانة ${type.label}',
+                style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: AppColors.navy)),
+              const SizedBox(height: 3),
+              Text(type.subtitle, maxLines: 1, overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontSize: 10.5, color: AppColors.muted)),
+              const SizedBox(height: 9),
+              Text(formatMoney(price),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: accent)),
+            ],
+          ),
         ),
       ),
     );
