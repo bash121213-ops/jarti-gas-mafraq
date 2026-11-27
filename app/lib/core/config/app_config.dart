@@ -10,7 +10,7 @@ class AppConfig {
 
   /// Demo verification code used by the local auth repository until the
   /// Supabase phone/OTP provider is connected.
-  static const String demoOtpCode = '123456';
+  static const String demoOtpCode = '1234';
 
   /// ETA shown while the delivery is on its way (demo value).
   static const int defaultEtaMinutes = 15;
